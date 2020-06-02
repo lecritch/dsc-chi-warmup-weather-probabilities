@@ -128,6 +128,6 @@ $P(Town2=Sunny|Town1=Sunny) = \displaystyle \frac{P(Town2=Sunny∩Town1=Sunny)}{
 
 
 ```python
-sunny_town1 = df.loc['Sunny'].sum()/20
-sunny_town2_given_sunny_town1 = sunny_town1_sunny_town2/sunny_town1
+sunny_town1 = None
+sunny_town2_given_sunny_town1 = None
 ```
