@@ -131,11 +131,11 @@ df.head()
 
 
 
-The above dataframe represents the joint weather events for two neighboring cities over a time frame of 20 days. 
+**The above dataframe** represents the joint weather events for two neighboring cities over a time frame of 20 days. 
 
 The index represents ```Town 1``` and the columns represent ```Town 2```
 
-The values represent the number of days the two weather events occurred.
+The values represent the number of days the two weather events in each town occurred on the same day.
 >ie. There were 2 days out of 20 it was Sunny in ```Town 1``` and Cloudy in ```Town 2```
 
 ## Question 1
