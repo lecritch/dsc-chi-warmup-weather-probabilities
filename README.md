@@ -1,4 +1,3 @@
-
 # Probability of weather in two cities
 <img src="https://i.ytimg.com/vi/6MGRkUlFZws/maxresdefault.jpg" alt="Weather cartoon" width="500"/>
 
@@ -6,6 +5,8 @@
 ```python
 # Run this cell unchanged
 import pandas as pd
+
+from test_background import pkl_dump, test_obj_dict, run_test_dict, run_test
 
 data = [{'Sunny': 6, 'Cloudy': 2, 'Rainy': 0},
        {'Sunny': 1, 'Cloudy': 5, 'Rainy': 2},
@@ -36,29 +37,29 @@ df.head()
   <thead>
     <tr style="text-align: right;">
       <th></th>
+      <th>Sunny</th>
       <th>Cloudy</th>
       <th>Rainy</th>
-      <th>Sunny</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>Sunny</th>
+      <td>Sunny</td>
+      <td>6</td>
       <td>2</td>
       <td>0</td>
-      <td>6</td>
     </tr>
     <tr>
-      <th>Cloudy</th>
+      <td>Cloudy</td>
+      <td>1</td>
       <td>5</td>
       <td>2</td>
-      <td>1</td>
     </tr>
     <tr>
-      <th>Rainy</th>
+      <td>Rainy</td>
+      <td>0</td>
       <td>1</td>
       <td>3</td>
-      <td>0</td>
     </tr>
   </tbody>
 </table>
@@ -84,6 +85,13 @@ $P(Town1=Sunny ∩ Town2=Sunny)$
 sunny_town1_sunny_town2 = None
 ```
 
+
+```python
+#run this cell to check
+
+run_test(sunny_town1_sunny_town2, 'sunny_town1_sunny_town2')
+```
+
 ## Question 2
 
 What is the probability of it not being Rainy in ```Town1``` and Rainy in ```Town2```?
@@ -93,6 +101,13 @@ $P(Town1 ∈ {Sunny ∪ Cloudy} ∩ Town2=Rainy)$
 
 ```python
 no_rain_town1_rain_town2 = None
+```
+
+
+```python
+#run this cell to check
+
+run_test(no_rain_town1_rain_town2, 'no_rain_town1_rain_town2')
 ```
 
 ## Question 3
@@ -109,6 +124,13 @@ $$P(Town2=Sunny ∩ Town1=Rainy)$$
 sunny_town2 = None
 ```
 
+
+```python
+#run this cell to check
+
+run_test(sunny_town2, 'sunny_town2')
+```
+
 ## Question 4
 
 What is the probability  of it being Sunny in ```Town1``` given that it is Sunny in ```Town2```?
@@ -118,6 +140,13 @@ $P(Town1=Sunny|Town2=Sunny) = \displaystyle \frac{P(Town1=Sunny∩Town2=Sunny)}{
 
 ```python
 sunny_town1_given_sunny_town2 = None
+```
+
+
+```python
+#run this cell to check
+
+run_test(sunny_town1_given_sunny_town2, 'sunny_town1_given_sunny_town2')
 ```
 
 ## Question 5
@@ -130,4 +159,16 @@ $P(Town2=Sunny|Town1=Sunny) = \displaystyle \frac{P(Town2=Sunny∩Town1=Sunny)}{
 ```python
 sunny_town1 = None
 sunny_town2_given_sunny_town1 = None
+```
+
+
+```python
+#run this cell to check
+
+run_test(sunny_town2_given_sunny_town1, 'sunny_town2_given_sunny_town1')
+```
+
+
+```python
+
 ```
