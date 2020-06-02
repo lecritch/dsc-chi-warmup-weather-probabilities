@@ -1,5 +1,6 @@
 
 # Probability of weather in two cities
+<img src="https://i.ytimg.com/vi/6MGRkUlFZws/maxresdefault.jpg" alt="Weather cartoon" width="500"/>
 
 
 ```python
